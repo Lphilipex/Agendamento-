@@ -12,19 +12,19 @@
             <h1>agendamento</h1>
             <form action="Agendamento">
                 <label for="nome" >Nome do paciente </label>
-                <input type="text" id="nome"  placeholder="Nome">
-                <label for="Email" id="email">Email</label>
-                <input type="email" id="email" placeholder="email@emnial.com" >
+                <input type="text" id="nome"  placeholder="Nome" required>
+                <label for="Email" id="email">Email</label> 
+                <input type="email" id="email" placeholder="email@emnial.com" required>
                 <label for="telefone">Telefone</label>
-                <input type="tel" name="telefone" id="telefone" placeholder="Ex: (99) 99999-9999">
+                <input type="tel" name="telefone" id="telefone" placeholder="Ex: (99) 99999-9999" required>
                 <label for="idade">idade</label>
-                <input type="number" id="idade" min="1" max="120" >
+                <input type="number" id="idade" min="1" max="120" required>
                 <p id="idade-erro"></p>
                 <label for="data">Data da consulta</label>
                 <input type="date" id="data">
                 <p id="mensagemErro"></p>
                 <label for="time">Horario</label>
-                <input type="time" id="hora">
+                <input type="time" id="hora" required>
                 <span id="label-servico" class="sr-only">Serviço</span>
                 <select name="especialidae" id="especialidade" aria-label="servico" >
                     <option value="" disabled selected>Selecione a especialidade </option>
@@ -44,7 +44,7 @@
                 <input type="checkbox" name="servico" id="Teleconsulta" value="Teleconsulta">Teleconsulta
                 <input type="checkbox" name="servico" id="Receita Médica" value="Receita Médica">Receita Médica
                 <label for="Sintomas">Sintomas</label>
-                <textarea name="sintomas" id="sintomas">Sintomas relatados</textarea>
+                <textarea name="sintomas" id="sintomas" required>Sintomas relatados</textarea>
                 <label for="Medico responsavel">Médico Responsável </label>
                 <select name="medico" id="medico" aria-label="medico">
                     <option value="" disabled selected> Médico Responsável</option>
